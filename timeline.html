@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline</title>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/timeline.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="http://www.csslab.cl/ejemplos/timelinr/latest/js/jquery.timelinr-0.9.54.js"></script>
+
+    <script>
+		$(function(){
+			var $activeDate = $('#dates li').click(function() {
+				$activeDate.not(this).removeClass('selected');
+				$(this).toggleClass('selected');				
+			});
+
+		});
+
+    </script>
+</head>
+<body>
+
+	<div id="timeline" class="container">
+		<div class="row">
+			<div class="col-3 col-md-1">
+		<ul id="dates">
+			<li class="selected"><a href="#1900">1900</a></li>
+			<li><a href="#1930">1930</a></li>
+			<li><a href="#1944">1944</a></li>
+			<li><a href="#1950">1950</a></li>
+			<li><a href="#1971">1971</a></li>
+			<li><a href="#1977">1977</a></li>
+			<li><a href="#1989">1989</a></li>
+			<li><a href="#1999">1999</a></li>
+			<li><a href="#2001">2001</a></li>
+			<li><a href="#2011">2011</a></li>
+		</ul>
+		</div>
+		<div class="col-9 col-md-8">
+		<ul id="issues">
+			<li id="1900" class="selected">
+				<div class="container">
+					<div class="row mx-auto">
+					<div class="col-12 proj-img">
+						<img src="./images/hague.png" alt="">
+					</div>
+					</div>
+
+					<div class="row">
+					<div class="d-flex align-items-center justify-space-between text-white proj-info">
+					<div class="col-6">
+						<h4>The Hague</h4>
+					</div>
+					<div class="col-6 sm-hide">
+						<span class="proj-status">Completed</span>
+					</div>
+					</div>
+					</div>
+					<div class="row">
+						<div class="proj-info text-white">
+							<h5>December 2017</h5>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 col-md-10 proj-info text-white">
+							<p>Real Estate is in our DNA and remains our core aim. 
+								Our business processes and activities range from remodelling and 
+								buying existing buildings to the purchase of raw land and the sale 
+								of developed lands .....</p>
+						</div>
+					</div>
+					<div class="row proj-link">
+						<div class="proj-info text-white">
+							<a href="#">View this project</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li id="1930">
+
+				<div class="container">
+					<div class="row mx-auto">
+					<div class="col-12 mt-5 mb-3">
+						<img src="./images/hague.png" alt="">
+					</div>
+					</div>
+
+					<div class="row">
+					<div class="d-flex align-items-center justify-space-between text-white proj-info">
+					<div class="col-6">
+						<h4>The Hague</h4>
+					</div>
+					<div class="col-6">
+						<span class="proj-status">Completed</span>
+					</div>
+					</div>
+					</div>
+					<div class="row">
+						<div class="proj-info text-white">
+							<p>December 2017</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-10 proj-info text-white">
+							<p>Real Estate is in our DNA and remains our core aim. 
+								Our business processes and activities range from remodelling and 
+								buying existing buildings to the purchase of raw land and the sale 
+								of developed lands .....</p>
+						</div>
+					</div>
+					<div class="row mt-5">
+						<div class="proj-info text-white">
+							<a href="#">View this project</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li id="1944">
+
+				<div class="container">
+					<div class="row mx-auto">
+					<div class="col-12 mt-5 mb-3">
+						<img src="./images/hague.png" alt="">
+					</div>
+					</div>
+
+					<div class="row">
+					<div class="d-flex align-items-center justify-space-between text-white proj-info">
+					<div class="col-6">
+						<h4>The Hague</h4>
+					</div>
+					<div class="col-6">
+						<span class="proj-status">Completed</span>
+					</div>
+					</div>
+					</div>
+					<div class="row">
+						<div class="proj-info text-white">
+							<p>December 2017</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-10 proj-info text-white">
+							<p>Real Estate is in our DNA and remains our core aim. 
+								Our business processes and activities range from remodelling and 
+								buying existing buildings to the purchase of raw land and the sale 
+								of developed lands .....</p>
+						</div>
+					</div>
+					<div class="row mt-5">
+						<div class="proj-info text-white">
+							<a href="#">View this project</a>
+						</div>
+					</div>
+				</div>
+			</li>
+
+		</ul>
+		</div>
+		</div>
+	</div>
+    
+</body>
+</html>

@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(180deg, #104550 14.82%, #0d2b31 100%);
+  font-family: Georgia, serif;
+  color: #fff;
+}
+
+#dates a {
+  color: #ffffcc;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.proj-status{
+	background-color: #79A841;
+	padding: 5px 20px;
+	font-weight: 500;
+	margin-left: 55px;
+}
+
+.proj-info{
+	margin-left: 50px;
+}
+
+#timeline {
+  /* width: 700px;
+  height: 550px; */
+  margin: 40px auto;
+  position: relative;  
+}
+
+#dates {
+  /* width: 100px; */
+  height: 550px;
+  /* float: left; */
+  background: url("../images/br-dash.svg") 5px top repeat-y;
+}
+
+#dates li {
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  margin-left: -8px;
+  list-style: none;
+}
+
+#dates a {
+  line-height: 38px;
+  padding-bottom: 10px;
+}
+
+#dates .selected {
+  font-size: 28px;
+  list-style-image: url('../images/selected.svg');
+}
+
+#issues {
+  width: 563px;
+  height: 549px;
+  overflow: hidden;
+  /* float: right; */
+}
+
+#issues li {
+  max-width: 569px;
+  width: 563px;
+  height: 549px;
+  list-style: none;
+  background-image: url("../images/project-bg.svg");
+}
+
+#issues li img {
+  width: 442px;
+  height: 188px;
+  margin: 45px 0 30px 40px;
+}
+
+
+@media (max-width: 575.98px) {
+
+#issues {
+  max-width: 230px;
+  /* width: 230px; */
+  height: 304px;
+  overflow: hidden;
+  margin-left: -10px;
+}
+
+#issues li {
+  max-width: 230px;
+  /* width: 230px; */
+  overflow: hidden;
+  height: 304px;
+  list-style: none;
+  background-image: url("../images/project-bg.svg");
+}
+
+#issues li img {
+  width: 177px;
+  height: 79px;
+  margin: 30px 0 15px 10px;
+}
+
+#dates {
+  height: 310px;
+  /* margin-left: -2px; */
+  background: url("../images/br-dash.svg") 5px top repeat-y;
+}
+
+#dates li {
+  width: 100px;
+  height: 30px;
+  line-height: 50px;
+  font-size: 14px;
+  margin-left: -8px;
+  list-style: none;
+}
+
+#dates a {
+  line-height: 30px;
+  padding-bottom: 10px;
+}
+
+#dates .selected {
+  font-size: 18px;
+  list-style-image: url('../images/selected.svg');
+}
+
+/* .proj-img{
+	margin: 50px 0 20px 0;
+} */
+.proj-info{
+	margin-left: 20px;
+}
+
+.proj-info h4{
+	font-size: 18px;
+}
+
+.proj-info h5{
+	font-size: 12px;
+}
+
+.proj-info p{
+	font-size: 10px;
+}
+
+.proj-link{
+	font-size: 10px;
+}
+
+.sm-hide{
+	display: none;
+}
+
+}
